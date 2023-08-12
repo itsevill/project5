@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head content as in index.html -->
+    <script src="validate.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Same header content as in index.html -->
+
+    <!-- Main content -->
+    <main id="content">
+        <!-- Your contact page content here -->
+        <h2>Contact Us</h2>
+        <form id="contactForm" action="index.html" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" required></textarea>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <div id="errorMessages">
+                <!-- Error messages will be displayed here -->
+            </div>
+        </form>
+    </main>
+
+    <!-- Same footer content as in index.html -->
+</body>
+</html>
